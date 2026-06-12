@@ -216,3 +216,18 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Node
+node_modules/
+npm-debug.log
+
+# Docker
+.env
+docker-compose.override.yml
+
+# General
+.DS_Store
+*.log
+__pycache__/
+*.pyc
+.venv/
