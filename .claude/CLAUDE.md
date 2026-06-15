@@ -13,7 +13,7 @@ Upwork presence as a Senior AI Automation Specialist and earn the first
 
 **Owner:** Hugo — Senior Full Stack Developer, ~8 years experience
 **AI Assistant:** Claude (via subscription — no API key)
-**Sprint:** 15 days · Jun 11–25, 2026 · 65 total hours
+**Sprint:** 12 working days · Jun 12–25, 2026 · ~46 total hours
 
 ---
 
@@ -66,11 +66,11 @@ upwork-ai-automation-portfolio/
 
 ## Active Projects — Priority Order
 
-| # | Project                         | Status         | Target Close |
-|---|---------------------------------|----------------|--------------|
-| 1 | Lead Generation + Outreach      | ⬜ Not started | Jun 16       |
-| 2 | RAG Support Chatbot             | ⬜ Not started | Jun 20       |
-| 3 | Document Processing / Invoicing | ⬜ Not started | Jun 24       |
+| # | Project                         | Status          | Target Close |
+|---|---------------------------------|-----------------|--------------|
+| 1 | Lead Generation + Outreach      | 🔄 In Progress  | Jun 19       |
+| 2 | RAG Support Chatbot             | ⬜ Not started  | Jun 22       |
+| 3 | Document Processing / Invoicing | ⬜ Not started  | Jun 25       |
 
 Full specs → see PROJECTS.md
 
@@ -140,9 +140,10 @@ Exception: inline code blocks inside READMEs are fine.
 
 See SPRINT.md for live day-by-day status.
 
-As of Day 2 (Fri Jun 12, 2026):
+As of Day 3 (Mon Jun 16, 2026 — first day of real project work):
 - Repo: https://github.com/Hakiller777/upwork-ai-automation-portfolio
 - Kanban: https://github.com/users/Hakiller777/projects/1
-- 5-project folder structure pushed ✅
-- Kanban: 5 columns + 14 cards loaded ✅
-- Next: docker-compose.yml base + Railway setup + master README
+- Setup complete (Days 1–2): docker-compose, Dockerfile, .env.example, README ✅
+- Kanban: 15 cards · Día 1 + Día 2 = ✅ Hecho · 3 cards #1 = 🔄 En progreso ✅
+- Sprint redistribuido Jun 15 → nuevo inicio: Jun 16 ✅
+- Next: Build project-1-lead-generation/ (full src/, tests/, data/, Docker)
