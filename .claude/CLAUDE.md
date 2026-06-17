@@ -13,7 +13,7 @@ Upwork presence as a Senior AI Automation Specialist and earn the first
 
 **Owner:** Hugo — Senior Full Stack Developer, ~8 years experience
 **AI Assistant:** Claude (via subscription — no API key)
-**Sprint:** 12 working days · Jun 12–25, 2026 · ~46 total hours
+**Sprint:** 15 working days + 3-day prep window · Jun 12 – Jul 2, 2026 · ~65 total hours
 
 ---
 
@@ -68,9 +68,9 @@ upwork-ai-automation-portfolio/
 
 | # | Project                         | Status          | Target Close |
 |---|---------------------------------|-----------------|--------------|
-| 1 | Lead Generation + Outreach      | 🔄 In Progress  | Jun 19       |
-| 2 | RAG Support Chatbot             | ⬜ Not started  | Jun 22       |
-| 3 | Document Processing / Invoicing | ⬜ Not started  | Jun 25       |
+| 1 | Lead Generation + Outreach      | 🔄 In Progress  | Jun 23       |
+| 2 | RAG Support Chatbot             | ⬜ Not started  | Jun 27       |
+| 3 | Document Processing / Invoicing | ⬜ Not started  | Jul 1        |
 
 Full specs → see PROJECTS.md
 
@@ -140,10 +140,10 @@ Exception: inline code blocks inside READMEs are fine.
 
 See SPRINT.md for live day-by-day status.
 
-As of Day 3 (Mon Jun 16, 2026 — first day of real project work):
+As of Prep #1 (Wed Jun 17, 2026 — day 1 of 3, architecture brief + synthetic data prep for Project #1):
 - Repo: https://github.com/Hakiller777/upwork-ai-automation-portfolio
 - Kanban: https://github.com/users/Hakiller777/projects/1
 - Setup complete (Days 1–2): docker-compose, Dockerfile, .env.example, README ✅
 - Kanban: 15 cards · Día 1 + Día 2 = ✅ Hecho · 3 cards #1 = 🔄 En progreso ✅
-- Sprint redistribuido Jun 15 → nuevo inicio: Jun 16 ✅
-- Next: Build project-1-lead-generation/ (full src/, tests/, data/, Docker)
+- Sprint recalibrado Jun 17 → Prep #1 (Jun 17–19) antes del build; Día 3 inicia Sáb Jun 20 ✅
+- Next: Cerrar brief de arquitectura + datos sintéticos en Prep #1, luego build de project-1-lead-generation/ (full src/, tests/, data/, Docker) desde Día 3 (Sáb Jun 20)

@@ -8,7 +8,7 @@
 ## Project #1 — Lead Generation + Outreach
 
 **Folder:** `project-1-lead-generation/`
-**Sprint window:** Days 3–6 · Close target: Jun 16
+**Sprint window:** Prep #1 (Jun 17–19) + Days 3–6 · Close target: Jun 23
 **Hours allocated:** ~17h
 
 ### What it does
@@ -66,7 +66,7 @@ project-1-lead-generation/
 ## Project #2 — RAG Support Chatbot
 
 **Folder:** `project-2-support-chatbot-rag/`
-**Sprint window:** Days 7–10 · Close target: Jun 20
+**Sprint window:** Days 7–10 · Close target: Jun 27
 **Hours allocated:** ~17h
 
 ### What it does
@@ -132,7 +132,7 @@ project-2-support-chatbot-rag/
 ## Project #3 — Document Processing / Invoicing
 
 **Folder:** `project-3-document-processing/`
-**Sprint window:** Days 11–14 · Close target: Jun 24
+**Sprint window:** Days 11–14 · Close target: Jul 1
 **Hours allocated:** ~17h
 
 ### What it does
