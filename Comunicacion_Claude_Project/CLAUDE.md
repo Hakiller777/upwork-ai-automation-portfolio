@@ -68,9 +68,9 @@ upwork-ai-automation-portfolio/
 
 | # | Project                         | Status          | Target Close |
 |---|---------------------------------|-----------------|--------------|
-| 1 | Lead Generation + Outreach      | 🔄 In Progress  | Jun 27       |
-| 2 | RAG Support Chatbot             | ⬜ Not started  | Jun 29       |
-| 3 | Document Processing / Invoicing | ⬜ Not started  | Jul 3        |
+| 1 | Lead Generation + Outreach      | 🔄 In Progress  | Sáb Jun 27   |
+| 2 | RAG Support Chatbot             | ⬜ Not started  | Mié Jul 1    |
+| 3 | Document Processing / Invoicing | ⬜ Not started  | Sáb Jul 4    |
 
 Full specs → see PROJECTS.md
 
@@ -138,9 +138,9 @@ Exception: inline code blocks inside READMEs are fine.
 
 See SPRINT.md for live day-by-day status.
 
-As of Jun 24, 2026 — Sprint recalibrado · Build Day 1:
+As of Mié Jun 24, 2026 — Sprint recalibrado · Build Day 1:
 - Setup complete (Days 1–2 + Prep #1): docker-compose, Dockerfile, .env.example, README ✅
 - Kanban: https://github.com/users/Hakiller777/projects/1
 - Project #1 Lead Generation: **arrancando HOY** 🔄
-- Close targets: #1 Jun 27 · #2 Jun 29 · #3 Jul 3 · Done Jul 4
+- Close targets: #1 Sáb Jun 27 · #2 Mié Jul 1 · #3 Sáb Jul 4
 - Next: build `project-1-lead-generation/` (full src/, tests/, data/, Docker)
