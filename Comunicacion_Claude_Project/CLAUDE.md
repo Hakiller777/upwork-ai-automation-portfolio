@@ -13,7 +13,7 @@ Upwork presence as a Senior AI Automation Specialist and earn the first
 
 **Owner:** Hugo — Senior Full Stack Developer, ~8 years experience
 **AI Assistant:** Claude (via subscription — no API key)
-**Sprint:** 15 days · Jun 11–25, 2026 · 65 total hours
+**Sprint:** Build phase · Jun 24 – Jul 4, 2026 · ~65 total hours
 
 ---
 
@@ -66,11 +66,11 @@ upwork-ai-automation-portfolio/
 
 ## Active Projects — Priority Order
 
-| # | Project                         | Status         | Target Close |
-|---|---------------------------------|----------------|--------------|
-| 1 | Lead Generation + Outreach      | ⬜ Not started | Jun 16       |
-| 2 | RAG Support Chatbot             | ⬜ Not started | Jun 20       |
-| 3 | Document Processing / Invoicing | ⬜ Not started | Jun 24       |
+| # | Project                         | Status          | Target Close |
+|---|---------------------------------|-----------------|--------------|
+| 1 | Lead Generation + Outreach      | 🔄 In Progress  | Jun 27       |
+| 2 | RAG Support Chatbot             | ⬜ Not started  | Jun 29       |
+| 3 | Document Processing / Invoicing | ⬜ Not started  | Jul 3        |
 
 Full specs → see PROJECTS.md
 
@@ -138,9 +138,9 @@ Exception: inline code blocks inside READMEs are fine.
 
 See SPRINT.md for live day-by-day status.
 
-As of Day 2 (Fri Jun 12, 2026):
-- Repo: https://github.com/Hakiller777/upwork-ai-automation-portfolio
+As of Jun 24, 2026 — Sprint recalibrado · Build Day 1:
+- Setup complete (Days 1–2 + Prep #1): docker-compose, Dockerfile, .env.example, README ✅
 - Kanban: https://github.com/users/Hakiller777/projects/1
-- 5-project folder structure pushed ✅
-- Kanban: 5 columns + 14 cards loaded ✅
-- Next: docker-compose.yml base + Railway setup + master README
+- Project #1 Lead Generation: **arrancando HOY** 🔄
+- Close targets: #1 Jun 27 · #2 Jun 29 · #3 Jul 3 · Done Jul 4
+- Next: build `project-1-lead-generation/` (full src/, tests/, data/, Docker)
