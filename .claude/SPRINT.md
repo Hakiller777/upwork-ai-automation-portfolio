@@ -8,14 +8,14 @@
 
 ## Current Status
 
-| Indicator           | Value                                                        |
-|---------------------|--------------------------------------------------------------|
-| Current day         | **Build Day 2 (Jue Jun 25)**                                 |
-| Hours consumed      | **~9 / 65 h** (setup + Prep #1 + Día 1)                     |
-| Projects done       | **0 / 3**                                                    |
-| Active project      | **#1 Lead Generation — scoring + outreach (Día 2)**         |
-| Next milestone      | Sáb Jun 27 → Cierre Project #1                               |
-| Active blockers     | None                                                         |
+| Indicator           | Value                                                           |
+|---------------------|-----------------------------------------------------------------|
+| Current day         | **Build Day 3 (Vie Jun 26)**                                    |
+| Hours consumed      | **~12 / 65 h** (setup + Prep #1 + Días 1–2)                   |
+| Projects done       | **0 / 3**                                                       |
+| Active project      | **#1 Lead Generation — tests + Docker (Día 3)**               |
+| Next milestone      | Sáb Jun 27 → Cierre Project #1                                  |
+| Active blockers     | None                                                            |
 
 ---
 
@@ -34,8 +34,8 @@
 | Day | Date        | Hours | Focus                                                     | Profile (parallel)         | Status    |
 |-----|-------------|-------|-----------------------------------------------------------|----------------------------|-----------|
 | 1   | Mié Jun 24  | 3h    | **#1** Architecture + core src/ + synthetic data CSV      | —                          | ✅ Done   |
-| 2   | Jue Jun 25  | 3h    | **#1** scoring.py + outreach.py full implementation       | —                          | 🔄 Today  |
-| 3   | Vie Jun 26  | 3h    | **#1** tests (pytest) + logging + Docker                  | —                          | ⬜        |
+| 2   | Jue Jun 25  | 3h    | **#1** scoring.py + outreach.py + pipeline.py             | —                          | ✅ Done   |
+| 3   | Vie Jun 26  | 3h    | **#1** tests (pytest) + Dockerfile + docker-compose       | —                          | 🔄 Today  |
 | 4   | Sáb Jun 27  | 8h    | **#1** n8n workflow + deploy Railway + Loom → **CLOSE #1**| —                          | ⬜        |
 | 5   | Dom Jun 28  | 8h    | **#2** Architecture + ingestion + ChromaDB + KB sintética | LinkedIn: headline + photo | ⬜        |
 | 6   | Lun Jun 29  | 3h    | **#2** agent logic + retrieval                            | —                          | ⬜        |
@@ -57,41 +57,28 @@
 
 ---
 
-## Hours Distribution
-
-| Type                       | Days | Hours/day | Subtotal |
-|----------------------------|------|-----------|----------|
-| Setup + Prep (done)        | —    | —         | ~6h      |
-| Weekday evenings (20–23h)  | 7    | 3h        | 21h      |
-| Saturdays (08–17h)         | 2    | 8h        | 16h      |
-| Sunday (08–17h)            | 1    | 8h        | 8h       |
-| **TOTAL**                  |      |           | **~51h** |
-
-Margen restante sobre las 65h originales: **~14h de buffer**.
-
----
-
 ## Completed Milestones
 
 - [x] Day 0 (Jun 10) — Tracking system built, roles defined
 - [x] Day 1 (Jun 12) — Repo created, 5-folder structure pushed, Kanban live
 - [x] Day 2 (Jun 12) — docker-compose.yml base, Dockerfile, .env.example, master README pushed
 - [x] Prep #1 (Jun 17–19) — Architecture brief + synthetic data specs for Project #1
-- [x] Jun 24 — Sprint recalibrado definitivo · build arranca hoy (Mié)
-- [x] Build Day 1 (Jun 24) — models.py + config.py + enrichment.py + scoring/outreach skeletons + 50 leads CSV
+- [x] Jun 24 — Sprint recalibrado definitivo · build arranca Mié
+- [x] Build Day 1 (Jun 24) — models.py + config.py + enrichment.py + skeletons + 50 leads CSV
+- [x] Build Day 2 (Jun 25) — scoring.py + outreach.py + pipeline.py (pipeline 100% funcional)
 
 ---
 
 ## Key Decisions Log
 
-| Date   | Decision                                                                 |
-|--------|--------------------------------------------------------------------------|
-| Jun 10 | One chat per day, one bitacora per day as MD context file                |
-| Jun 10 | Cowork = docs/READMEs, Code = coding, Project chat = HQ                 |
-| Jun 12 | GitHub CLI (gh) adopted as standard for GitHub operations                |
-| Jun 12 | Kanban cards created as drafts (not issues) — faster                    |
-| Jun 12 | 5 columns: Backlog · En progreso · En revisión · Hecho · Bloqueado      |
-| Jun 15 | Sprint redistribuido — inicio real proyectos: Jun 16                    |
-| Jun 17 | Prep #1 insertado — brief + datos sintéticos antes del build             |
+| Date   | Decision                                                                  |
+|--------|---------------------------------------------------------------------------|
+| Jun 10 | One chat per day, one bitacora per day as MD context file                 |
+| Jun 10 | Cowork = docs/READMEs, Code = coding, Project chat = HQ                  |
+| Jun 12 | GitHub CLI (gh) adopted as standard for GitHub operations                 |
+| Jun 12 | Kanban cards created as drafts (not issues) — faster                     |
+| Jun 15 | Sprint redistribuido — inicio real proyectos: Jun 16                     |
+| Jun 17 | Prep #1 insertado — brief + datos sintéticos antes del build              |
 | Jun 24 | Sprint recalibrado definitivo — build arranca Jun 24 (Mié), cierre Jul 4 |
-| Jun 24 | enrichment.py implementado completo (rule-based) en Día 1               |
+| Jun 24 | enrichment.py implementado completo (rule-based) en Día 1                |
+| Jun 25 | pipeline.py agregado como runner end-to-end (n8n lo llama vía webhook)   |
