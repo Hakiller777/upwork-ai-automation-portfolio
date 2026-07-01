@@ -6,6 +6,33 @@
 
 ---
 
+## 🚀 NEXT SESSION — START HERE
+
+Sesión cerrada el 2026-07-01 con esta lista acordada como punto de partida. Objetivo: cerrar todo esto en la próxima sesión para llegar al 2-Jul alineados con el Día 9 del calendario (Project #3).
+
+**Project #1 — wrap-up (código ya completo, falta cerrar):**
+- [ ] README.md de `project-1-lead-generation/` (arquitectura + setup + uso + diagrama Mermaid)
+- [ ] Confirmar/ejecutar deploy real en Railway (Hugo)
+- [ ] Grabar Loom del flujo end-to-end (Hugo)
+
+**Project #2 — RAG Support Chatbot (0% → build completo desde cero):**
+- [ ] `src/config.py`, `src/models.py` — arquitectura base
+- [ ] `src/ingestion.py` — chunking + embeddings + carga a ChromaDB
+- [ ] `src/retrieval.py` — búsqueda vectorial + ranking
+- [ ] `src/agent.py` — agente Claude con contexto RAG
+- [ ] Base de conocimiento sintética (20 docs de "AcmeCRM": faq.md, product_guide.md, troubleshooting.md + 17 más) — normalmente de Cowork, redactar mínimo viable si bloquea
+- [ ] `tests/` pytest (ingestion, retrieval, agent) — happy path + edge cases + error case
+- [ ] Dockerfile + docker-compose + servicio ChromaDB
+- [ ] `n8n/workflow.json` — orquestación de queries
+- [ ] `railway.toml` / deploy config
+- [ ] README.md
+- [ ] Deploy real en Railway (Hugo)
+- [ ] Loom del flujo end-to-end (Hugo)
+
+**Nota de alcance:** esto representa ~17-20h de trabajo (todo lo que estaba repartido en Días 5-8), no las 3h nominales del Día 8. Si no cierra completo en una sesión, lo que quede pendiente se termina antes de arrancar Project #3 — no se acumula como atraso nuevo.
+
+---
+
 ## Current Status
 
 | Indicator           | Value                                                              |

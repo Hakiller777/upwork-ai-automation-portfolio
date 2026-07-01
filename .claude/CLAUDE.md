@@ -148,3 +148,4 @@ See SPRINT.md for live day-by-day status.
 - Project #3 Document Processing: **0% — sin archivos**, sin empezar.
 - Kanban (corregido 2026-07-01): Día 1/2 = ✅ Hecho · "#1 Arquitectura+núcleo" y "#1 Lógica+tests" = ✅ Hecho (reflejan el código real) · "#1 README+diagrama" y "#1 Deploy+Loom—CIERRE" = 📋 Backlog (lo que realmente falta) · Project #2/#3 = 📋 Backlog sin cambios
 - Next: decidir si se replanifica el calendario desde hoy o se recorta alcance (ej. cerrar bien #1 y #2, dejar #3 como stretch) — el sprint termina Jul 4 y quedan 2.9 de 3 proyectos por hacer
+- **Sesión cerrada 2026-07-01 — próxima sesión arranca directo con la lista "🚀 NEXT SESSION — START HERE" al tope de SPRINT.md** (wrap-up de #1 + build completo de #2)
