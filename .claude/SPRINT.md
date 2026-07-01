@@ -27,6 +27,10 @@
 
 **Nota:** con #1 y #2 con código cerrado, el sprint termina Jul 4 con solo Project #3 pendiente de construir + wrap-up manual (READMEs/Looms/deploys) de los 3.
 
+**Kanban sincronizado 2026-07-01 (cierre de sesión):** "#2 Arquitectura+setup RAG/vector", "#2 Ingestion docs+base de conocimiento" y "#2 Logica del agente+errores" → ✅ Hecho (reflejan el código real). "#2 Terminar+tests+deploy+Loom—CIERRE" → 🔄 En progreso (tests ya completos y pasando; falta deploy Railway + Loom, tareas de Hugo). Resto sin cambios.
+
+**Sesión cerrada 2026-07-01 (tarde) — próxima sesión arranca con la lista de arriba: build de Project #3 (Claude Code) en paralelo al wrap-up manual de #1/#2 (Hugo/Cowork).**
+
 ---
 
 ## Current Status
