@@ -68,8 +68,8 @@ upwork-ai-automation-portfolio/
 
 | # | Project                         | Status          | Target Close |
 |---|---------------------------------|-----------------|--------------|
-| 1 | Lead Generation + Outreach      | 🔄 In Progress  | Sáb Jun 27   |
-| 2 | RAG Support Chatbot             | ⬜ Not started  | Mié Jul 1    |
+| 1 | Lead Generation + Outreach      | 🔄 Code done, README/Loom/deploy pending | ~~Sáb Jun 27~~ |
+| 2 | RAG Support Chatbot             | ⬜ Not started (0 files) | ~~Mié Jul 1~~ missed |
 | 3 | Document Processing / Invoicing | ⬜ Not started  | Sáb Jul 4    |
 
 Full specs → see PROJECTS.md
@@ -140,9 +140,11 @@ Exception: inline code blocks inside READMEs are fine.
 
 See SPRINT.md for live day-by-day status.
 
-As of Mié Jun 24, 2026 — Sprint recalibrado · Build Day 1:
+**⚠️ As of 2026-07-01:** 7 días calendario sin commits desde Jun 24 (último trabajo real). El plan tenía a Project #2 cerrado hoy — no se empezó.
 - Setup complete (Days 1–2 + Prep #1): docker-compose, Dockerfile, .env.example, README ✅
 - Kanban: https://github.com/users/Hakiller777/projects/1
-- Project #1 Lead Generation: **arrancando HOY** 🔄
-- Close targets: #1 Sáb Jun 27 · #2 Mié Jul 1 · #3 Sáb Jul 4
-- Next: build `project-1-lead-generation/` (full src/, tests/, data/, Docker)
+- Project #1 Lead Generation: **código completo** (src/, tests/ con 15 tests, Dockerfile, docker-compose, n8n workflow, Flask API, railway.toml) — hecho en una sola sesión el Jun 24. Falta: README del proyecto (sigue siendo solo el título), Loom, y confirmar que el deploy en Railway esté realmente arriba.
+- Project #2 RAG Support Chatbot: **0% — sin archivos**, solo README placeholder. Debía estar cerrado hoy (Jul 1) según el plan recalibrado.
+- Project #3 Document Processing: **0% — sin archivos**, sin empezar.
+- Kanban (corregido 2026-07-01): Día 1/2 = ✅ Hecho · "#1 Arquitectura+núcleo" y "#1 Lógica+tests" = ✅ Hecho (reflejan el código real) · "#1 README+diagrama" y "#1 Deploy+Loom—CIERRE" = 📋 Backlog (lo que realmente falta) · Project #2/#3 = 📋 Backlog sin cambios
+- Next: decidir si se replanifica el calendario desde hoy o se recorta alcance (ej. cerrar bien #1 y #2, dejar #3 como stretch) — el sprint termina Jul 4 y quedan 2.9 de 3 proyectos por hacer
