@@ -2,34 +2,30 @@
 
 > Sprint recalibrado — build arranca Jun 24, 2026 · ~65 total hours
 > Recalibraciones: Jun 15, Jun 17, Jun 24 (inicio build efectivo)
-> **⚠️ Actualizado 2026-07-01:** sin actividad en el repo desde Jun 24 (Build Day 4). El plan tenía Días 5–8 (Jun 28–Jul 1, Project #2 completo) para hoy — no se ejecutaron.
+> **✅ Actualizado 2026-07-01 (sesión tarde):** Project #2 (RAG chatbot) construido completo de punta a punta en esta sesión — código, tests, KB sintética, Docker, n8n, Railway config. Falta solo README (Cowork) + deploy real + Loom (Hugo).
 
 ---
 
 ## 🚀 NEXT SESSION — START HERE
 
-Sesión cerrada el 2026-07-01 con esta lista acordada como punto de partida. Objetivo: cerrar todo esto en la próxima sesión para llegar al 2-Jul alineados con el Día 9 del calendario (Project #3).
-
 **Project #1 — wrap-up (código ya completo, falta cerrar):**
-- [ ] README.md de `project-1-lead-generation/` (arquitectura + setup + uso + diagrama Mermaid)
+- [ ] README.md de `project-1-lead-generation/` (arquitectura + setup + uso + diagrama Mermaid) — Cowork
 - [ ] Confirmar/ejecutar deploy real en Railway (Hugo)
 - [ ] Grabar Loom del flujo end-to-end (Hugo)
 
-**Project #2 — RAG Support Chatbot (0% → build completo desde cero):**
-- [ ] `src/config.py`, `src/models.py` — arquitectura base
-- [ ] `src/ingestion.py` — chunking + embeddings + carga a ChromaDB
-- [ ] `src/retrieval.py` — búsqueda vectorial + ranking
-- [ ] `src/agent.py` — agente Claude con contexto RAG
-- [ ] Base de conocimiento sintética (20 docs de "AcmeCRM": faq.md, product_guide.md, troubleshooting.md + 17 más) — normalmente de Cowork, redactar mínimo viable si bloquea
-- [ ] `tests/` pytest (ingestion, retrieval, agent) — happy path + edge cases + error case
-- [ ] Dockerfile + docker-compose + servicio ChromaDB
-- [ ] `n8n/workflow.json` — orquestación de queries
-- [ ] `railway.toml` / deploy config
-- [ ] README.md
+**Project #2 — RAG Support Chatbot (código completo, falta cerrar):**
+- [ ] README.md — Cowork
 - [ ] Deploy real en Railway (Hugo)
 - [ ] Loom del flujo end-to-end (Hugo)
 
-**Nota de alcance:** esto representa ~17-20h de trabajo (todo lo que estaba repartido en Días 5-8), no las 3h nominales del Día 8. Si no cierra completo en una sesión, lo que quede pendiente se termina antes de arrancar Project #3 — no se acumula como atraso nuevo.
+**Project #3 — Document Processing (0% — sin empezar):**
+- [ ] Build completo: extractor, classifier, registry, report_generator + tests + Docker + n8n + Railway (Claude Code)
+- [ ] Synthetic sample PDFs (10 fictional invoices/receipts) — Cowork, o mínimo viable si bloquea
+- [ ] README — Cowork
+- [ ] Deploy real en Railway (Hugo)
+- [ ] Loom del flujo end-to-end (Hugo)
+
+**Nota:** con #1 y #2 con código cerrado, el sprint termina Jul 4 con solo Project #3 pendiente de construir + wrap-up manual (READMEs/Looms/deploys) de los 3.
 
 ---
 
@@ -38,14 +34,13 @@ Sesión cerrada el 2026-07-01 con esta lista acordada como punto de partida. Obj
 | Indicator           | Value                                                              |
 |---------------------|--------------------------------------------------------------------|
 | Current real date   | **Wed Jul 1, 2026**                                                |
-| Last real commit    | **Jun 24** (Build Days 1–4, todo en una sola sesión)               |
-| Days idle           | **7 días sin commits** (Jun 25 – Jul 1)                             |
-| Hours consumed      | **~23 / 65 h** (self-reported, sin cambios desde Jun 24)           |
-| Projects done       | **0 / 3** — Project #1: código completo ✅, falta README + Loom + confirmar deploy Railway |
-| Project #2 (RAG)    | **0% — sin archivos** (plan esperaba Días 5–8 completos hoy)       |
+| Last real commit    | **Jul 1** (Project #2 build — código completo en esta sesión)      |
+| Hours consumed      | **~23 / 65 h** (self-reported; no incluye la sesión de hoy)        |
+| Projects done       | **0 / 3 cerrados** — #1 y #2: código completo ✅, falta README + Loom + confirmar deploy Railway en ambos |
+| Project #2 (RAG)    | **Código completo** — src/, tests/ (16 tests), 20 docs KB "AcmeCRM", Dockerfile, docker-compose, n8n workflow, railway.toml |
 | Project #3 (Docs)   | **0% — sin archivos**                                              |
-| Next milestone (plan original) | Hoy (Jul 1) = cierre Project #2 — no alcanzado           |
-| Active blockers     | **Sprint frenado desde Jun 24** — necesita decisión de replanificación (ver Pending Items) |
+| Next milestone      | Cerrar #1 y #2 (README/Loom/deploy — Cowork + Hugo) y construir #3 (Claude Code) |
+| Active blockers     | Ninguno de código — quedan tareas manuales (Loom, deploy Railway) fuera del alcance de Claude Code |
 
 ---
 
@@ -67,15 +62,15 @@ Sesión cerrada el 2026-07-01 con esta lista acordada como punto de partida. Obj
 | 2   | Jue Jun 25  | 3h    | **#1** scoring.py + outreach.py + pipeline.py                       | —                          | ✅ Done (real: hecho el mismo Jun 24) |
 | 3   | Vie Jun 26  | 3h    | **#1** tests (pytest) + Dockerfile + docker-compose                 | —                          | ✅ Done (real: hecho el mismo Jun 24) |
 | 4   | Sáb Jun 27  | 8h    | **#1** n8n workflow + Flask API + railway.toml → **code complete** | —                          | ✅ Done (real: hecho el mismo Jun 24) |
-| 5   | Dom Jun 28  | 8h    | **#2** Architecture + ingestion + ChromaDB + KB sintética          | LinkedIn: headline + photo | ⬜ Missed — sin archivos en project-2 |
-| 6   | Lun Jun 29  | 3h    | **#2** agent logic + retrieval                                      | —                          | ⬜ Missed   |
-| 7   | Mar Jun 30  | 3h    | **#2** tests + error handling + logging                             | LinkedIn: About            | ⬜ Missed   |
-| 8   | Mié Jul 1   | 3h    | **#2** deploy Railway + Loom → **CLOSE #2**                        | —                          | ⬜ **Hoy — Project #2 en 0%, no se puede cerrar** |
+| 5   | Dom Jun 28  | 8h    | **#2** Architecture + ingestion + ChromaDB + KB sintética          | LinkedIn: headline + photo | ✅ Done (real: hecho el 1-Jul) |
+| 6   | Lun Jun 29  | 3h    | **#2** agent logic + retrieval                                      | —                          | ✅ Done (real: hecho el 1-Jul) |
+| 7   | Mar Jun 30  | 3h    | **#2** tests + error handling + logging                             | LinkedIn: About            | ✅ Done (real: hecho el 1-Jul) |
+| 8   | Mié Jul 1   | 3h    | **#2** deploy Railway + Loom → **CLOSE #2**                        | —                          | 🔄 Código ✅ — falta deploy + Loom (Hugo) |
 | 9   | Jue Jul 2   | 3h    | **#3** Architecture + extractor + classifier + datos                | Upwork: title + overview   | ⬜           |
 | 10  | Vie Jul 3   | 3h    | **#3** registry + report generator + n8n workflow                   | —                          | ⬜           |
 | 11  | Sáb Jul 4   | 8h    | **#3** tests + deploy + Loom → **CLOSE #3** + polish final         | Upwork: portfolio 3 videos | ⬜           |
 
-**Nota (2026-07-01):** los "Días 2–4" del build quedaron marcados como fechas Jun 25–27 pero en la práctica todo el código de Project #1 (arquitectura, scoring, outreach, pipeline, 15 tests, Docker, n8n workflow, Flask API, railway.toml) se hizo en una sola sesión el **Jun 24**. Desde entonces, **7 días calendario sin ningún commit** — Project #2 (RAG) sigue en 0%, sin un solo archivo en `project-2-support-chatbot-rag/` más allá del README placeholder. El plan esperaba tener Project #2 cerrado hoy (Jul 1); en cambio no se empezó.
+**Nota (2026-07-01):** Project #2 (RAG Support Chatbot) se construyó completo en la sesión de la tarde del 1-Jul: `src/config.py`, `models.py`, `embeddings.py` (vectorizer hashing determinístico, offline), `ingestion.py`, `retrieval.py`, `agent.py` (generación simulada tipo Claude, mismo patrón que scoring.py de Project #1), `api.py` (Flask), knowledge base sintética de 20 docs para "AcmeCRM", 16 tests pytest (todos pasando), Dockerfile, docker-compose.yml, n8n/workflow.json, railway.toml. Verificado end-to-end: ingestion real (20 docs → 60 chunks) + query real vía Flask API con respuesta y citas correctas. Docker build no se pudo verificar en esta sesión (Docker Desktop no estaba corriendo) pero el Dockerfile replica el patrón ya probado de Project #1.
 
 ---
 
@@ -84,7 +79,7 @@ Sesión cerrada el 2026-07-01 con esta lista acordada como punto de partida. Obj
 | Project                         | Close Target                         |
 |---------------------------------|--------------------------------------|
 | #1 Lead Generation + Outreach   | ~~Sáb Jun 27~~ code ✅ · falta README + Loom + confirmar deploy Railway |
-| #2 RAG Support Chatbot          | ~~Mié Jul 1 (hoy)~~ **incumplido — 0% avance** |
+| #2 RAG Support Chatbot          | ~~Mié Jul 1 (hoy)~~ code ✅ (1-Jul) · falta README + Loom + confirmar deploy Railway |
 | #3 Document Processing          | **Sáb Jul 4** — en riesgo alto        |
 
 ---
@@ -96,8 +91,10 @@ Sesión cerrada el 2026-07-01 con esta lista acordada como punto de partida. Obj
 | 1 | Project #1 — escribir README (arquitectura + setup + uso + diagrama Mermaid) | Urgente | ⬜ Open |
 | 2 | Project #1 — grabar Loom del flujo end-to-end                     | Urgente       | ⬜ Open     |
 | 3 | Project #1 — confirmar deploy real en Railway (no verificable desde el repo) | Urgente | ⬜ Open |
-| 4 | Project #2 — no iniciado, plan original lo daba por cerrado hoy    | Vencido       | 🚩 Blocking |
-| 5 | Decidir: replanificar calendario desde Jul 1, o recortar alcance (ej. 2 proyectos pulidos en vez de 3) antes de seguir | Urgente — sprint cierra Jul 4 | 🚩 Blocking |
+| 4 | Project #2 — escribir README (arquitectura + setup + uso + diagrama Mermaid) | Urgente | ⬜ Open |
+| 5 | Project #2 — grabar Loom del flujo end-to-end                     | Urgente       | ⬜ Open     |
+| 6 | Project #2 — confirmar deploy real en Railway (no verificable desde el repo) | Urgente | ⬜ Open |
+| 7 | Project #3 — build completo desde cero (Claude Code)               | Sáb Jul 4     | ⬜ Open     |
 
 ---
 
@@ -112,6 +109,7 @@ Sesión cerrada el 2026-07-01 con esta lista acordada como punto de partida. Obj
 - [x] Build Day 2 (Jun 25) — scoring + outreach + pipeline (end-to-end funcional)
 - [x] Build Day 3 (Jun 26) — pytest suite (15 tests) + Dockerfile + docker-compose
 - [x] Build Day 4 (Jun 27) — n8n workflow + Flask API + railway.toml → Project #1 code complete
+- [x] Build Day 5-8 (real: Jul 1) — Project #2 RAG chatbot: ingestion + retrieval + agent + KB sintética (20 docs) + 16 tests + Docker + n8n + railway.toml → Project #2 code complete
 
 ---
 
@@ -130,3 +128,4 @@ Sesión cerrada el 2026-07-01 con esta lista acordada como punto de partida. Obj
 | Jun 25 | pipeline.py agregado como runner end-to-end                               |
 | Jun 26 | pytest suite: 15 tests cubriendo happy path + edge cases + error cases    |
 | Jun 27 | Flask API (src/api.py) agregado — HTTP layer para integración con n8n    |
+| Jul 1  | Project #2: embeddings implementados con un vectorizer hashing determinístico propio (no modelo externo ni API) para mantener el demo 100% offline y sin dependencias pesadas — swap documentado en código para producción |
