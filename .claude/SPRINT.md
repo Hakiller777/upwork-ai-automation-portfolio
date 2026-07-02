@@ -3,6 +3,7 @@
 > Sprint recalibrado — build arranca Jun 24, 2026 · ~65 total hours
 > Recalibraciones: Jun 15, Jun 17, Jun 24 (inicio build efectivo)
 > **✅ Actualizado 2026-07-02:** Project #3 (Document Processing) construido completo de punta a punta en esta sesión — código, tests, datos sintéticos, Docker, n8n, Railway config. Con esto, **los 3 proyectos tienen código 100% completo**. Falta solo README + deploy real + Loom (Hugo/Cowork) en los 3.
+> **✅ Re-verificado 2026-07-02 (misma tarde):** re-chequeo completo de Project #3 — 17/17 tests OK, pipeline CLI corrido en vivo sobre los 10 documentos sintéticos (8 reported, 2 needs_review, 0 failed), `docker compose config` validado sin errores en root + los 3 proyectos (puertos 8000/8001/8002 sin conflicto). Kanban (GitHub Projects #1) estaba desactualizado — las 3 tarjetas de núcleo de Project #3 seguían en Backlog pese a estar terminadas; se movieron a ✅ Hecho, y la tarjeta de cierre (README+diagrama+deploy+Loom) se movió a 🔄 En progreso, en línea con la de Project #2.
 
 ---
 
