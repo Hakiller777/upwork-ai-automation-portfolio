@@ -114,7 +114,7 @@
 - [x] Jun 24 — Sprint recalibrado definitivo
 - [x] Build Day 1 (Jun 24) — models + config + enrichment + skeletons + 50 leads CSV
 - [x] Build Day 2 (Jun 25) — scoring + outreach + pipeline (end-to-end funcional)
-- [x] Build Day 3 (Jun 26) — pytest suite (15 tests) + Dockerfile + docker-compose
+- [x] Build Day 3 (Jun 26) — pytest suite (26 tests) + Dockerfile + docker-compose
 - [x] Build Day 4 (Jun 27) — n8n workflow + Flask API + railway.toml → Project #1 code complete
 - [x] Build Day 5-8 (real: Jul 1) — Project #2 RAG chatbot: ingestion + retrieval + agent + KB sintética (20 docs) + 16 tests + Docker + n8n + railway.toml → Project #2 code complete
 - [x] Build Day 9-11 (real: Jul 2) — Project #3 Document Processing: extractor (pluggable) + classifier + registry SQLite + report_generator + pipeline + 17 tests + 10 docs sintéticos (4 PDF + 6 email JSON) + Docker + n8n + railway.toml → Project #3 code complete — **los 3 proyectos tienen código cerrado**
@@ -134,7 +134,8 @@
 | Jun 24 | Sprint recalibrado definitivo — build arranca Jun 24 (Mié), cierre Jul 4 |
 | Jun 24 | enrichment.py implementado completo (rule-based) en Día 1                |
 | Jun 25 | pipeline.py agregado como runner end-to-end                               |
-| Jun 26 | pytest suite: 15 tests cubriendo happy path + edge cases + error cases    |
+| Jun 26 | pytest suite: 26 tests cubriendo happy path + edge cases + error cases    |
+| Jul 2  | Auditoría real (tarde): número de tests de #1 corregido de 15→26 en toda la doc — el "15" nunca se verificó corriendo pytest, se arrastró desde una sesión con clon local desactualizado (commit 34efc9c, 1-Jul). #2 (16) y #3 (17) confirmados exactos corriendo pytest de verdad |
 | Jun 27 | Flask API (src/api.py) agregado — HTTP layer para integración con n8n    |
 | Jul 1  | Project #2: embeddings implementados con un vectorizer hashing determinístico propio (no modelo externo ni API) para mantener el demo 100% offline y sin dependencias pesadas — swap documentado en código para producción |
 | Jul 2  | Project #3: extracción vía interfaz pluggable `DocumentExtractor` (regex determinístico por defecto, Claude API documentado pero sin wire-up) — mismo patrón de "mock swappable por env var" que scoring.py (#1) y embeddings.py (#2) |
