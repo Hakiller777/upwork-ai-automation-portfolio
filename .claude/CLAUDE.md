@@ -70,7 +70,7 @@ upwork-ai-automation-portfolio/
 |---|---------------------------------|-----------------|--------------|
 | 1 | Lead Generation + Outreach      | 🔄 Code done, README/Loom/deploy pending | ~~Sáb Jun 27~~ |
 | 2 | RAG Support Chatbot             | 🔄 Code done, README/Loom/deploy pending | ~~Mié Jul 1~~ code closed 1-Jul |
-| 3 | Document Processing / Invoicing | ⬜ Not started  | Sáb Jul 4    |
+| 3 | Document Processing / Invoicing | 🔄 Code done, README/Loom/deploy pending | ~~Sáb Jul 4~~ code closed 2-Jul |
 
 Full specs → see PROJECTS.md
 
@@ -140,11 +140,11 @@ Exception: inline code blocks inside READMEs are fine.
 
 See SPRINT.md for live day-by-day status.
 
-**✅ As of 2026-07-01 (sesión tarde):** Project #2 (RAG Support Chatbot) construido completo de punta a punta en esta sesión.
+**✅ As of 2026-07-02:** Project #3 (Document Processing) construido completo de punta a punta en esta sesión. Con esto, **los 3 proyectos del sprint tienen código 100% completo.**
 - Setup complete (Days 1–2 + Prep #1): docker-compose, Dockerfile, .env.example, README ✅
 - Kanban: https://github.com/users/Hakiller777/projects/1
 - Project #1 Lead Generation: **código completo** (src/, tests/ con 15 tests, Dockerfile, docker-compose, n8n workflow, Flask API, railway.toml) — hecho en una sola sesión el Jun 24. Falta: README del proyecto, Loom, y confirmar que el deploy en Railway esté realmente arriba.
 - Project #2 RAG Support Chatbot: **código completo** (src/config.py, models.py, embeddings.py, ingestion.py, retrieval.py, agent.py, api.py; 16 tests pytest; KB sintética de 20 docs "AcmeCRM"; Dockerfile, docker-compose, n8n/workflow.json, railway.toml) — hecho en una sola sesión el 1-Jul. Verificado end-to-end (ingestion real + query real vía Flask). Falta: README, Loom, confirmar deploy Railway.
-- Project #3 Document Processing: **0% — sin archivos**, sin empezar.
-- Next: construir Project #3 (extractor, classifier, registry, report_generator + tests + Docker + n8n + Railway) — mismo patrón que #1 y #2. En paralelo, Hugo/Cowork cierran README+Loom+deploy de #1 y #2.
+- Project #3 Document Processing: **código completo** (src/config.py, models.py, extractor.py con interfaz pluggable `DocumentExtractor` — regex determinístico por defecto + Claude API documentado sin wire-up, classifier.py, registry.py con SQLite, report_generator.py, pipeline.py, api.py; 17 tests pytest; 10 documentos sintéticos: 4 PDFs reales + 6 emails simulados JSON; Dockerfile, docker-compose, n8n/workflow.json, railway.toml) — hecho en una sola sesión el 2-Jul. Verificado end-to-end (pipeline CLI real sobre los 10 docs + Flask API real). Falta: README, Loom, confirmar deploy Railway.
+- Next: no queda build de código pendiente en el alcance actual del sprint. Hugo/Cowork cierran README+Loom+deploy Railway de los 3 proyectos en paralelo.
 - Ver lista "🚀 NEXT SESSION — START HERE" al tope de SPRINT.md para el detalle exacto de lo pendiente.
