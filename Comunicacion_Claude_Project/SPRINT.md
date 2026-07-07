@@ -9,12 +9,12 @@
 
 | Indicator           | Value                                                              |
 |---------------------|--------------------------------------------------------------------|
-| Current day         | **Build Day 5 (Dom Jun 28)**                                       |
-| Hours consumed      | **~23 / 65 h** (setup + Prep #1 + Días 1–4)                      |
-| Projects done       | **0 / 3** (Project #1 code ✅ — Loom ⏳ pendiente)                |
-| Active project      | **#2 RAG Support Chatbot — Architecture + ingestion (Día 5)**    |
-| Next milestone      | Mié Jul 1 → **CIERRE Project #2**                                |
-| Active blockers     | None                                                               |
+| Current day         | **Mar Jul 7, 2026**                                                |
+| Projects done       | **0 / 3** (code + docs ✅ para los 3 — Loom video ⏳ pendiente para los 3) |
+| Deploy status       | **✅ Los 3 servicios live en Railway, health check 200 en los 3** |
+| Active project      | Pendiente: grabar Loom de #1, #2 y #3                              |
+| Next milestone      | Loom videos → **CIERRE de los 3 proyectos**                        |
+| Active blockers     | None (Railway free-plan limit resuelto — ver Key Decisions Log)   |
 
 ---
 
@@ -67,6 +67,8 @@
 - [x] Build Day 2 (Jun 25) — scoring + outreach + pipeline (end-to-end funcional)
 - [x] Build Day 3 (Jun 26) — pytest suite (15 tests) + Dockerfile + docker-compose
 - [x] Build Day 4 (Jun 27) — n8n workflow + Flask API + railway.toml → Project #1 code complete
+- [x] Jul 7 — Project #2 y #3 code + tests + docs completos (ver commits previos)
+- [x] Jul 7 — **Deploy Railway de los 3 proyectos**, dominio público + health check 200 en los 3, README actualizado con URL real
 
 ---
 
@@ -85,3 +87,5 @@
 | Jun 25 | pipeline.py agregado como runner end-to-end                               |
 | Jun 26 | pytest suite: 15 tests cubriendo happy path + edge cases + error cases    |
 | Jun 27 | Flask API (src/api.py) agregado — HTTP layer para integración con n8n    |
+| Jul 7  | Deploy Railway: plan Free bloqueó creación de proyecto nuevo (resource limit) — se reusaron 2 proyectos vacíos preexistentes para #1/#2 y #3 se desplegó como segundo servicio dentro del mismo proyecto que #1 |
+| Jul 7  | Pendiente antes de cerrar los 3 proyectos: grabar y subir Loom video de cada uno |

@@ -23,7 +23,7 @@ For a team processing dozens of documents a day, this replaces manual data entry
 
 ## Live Demo
 
-- **Live API:** `[Railway URL — add after deploy]`
+- **Live API:** [`https://document-processing-pipeline-production.up.railway.app`](https://document-processing-pipeline-production.up.railway.app/health)
 - **Demo video (Loom):** `[Loom link — add after recording]`
 
 ---

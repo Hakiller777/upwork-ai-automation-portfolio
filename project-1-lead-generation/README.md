@@ -23,7 +23,7 @@ For a sales team processing 50 leads a week, this replaces what is typically 15�
 
 ## Live Demo
 
-- **Live API:** `[Railway URL — add after deploy]`
+- **Live API:** [`https://respectful-cooperation-production-3d7c.up.railway.app`](https://respectful-cooperation-production-3d7c.up.railway.app/health)
 - **Demo video (Loom):** `[Loom link — add after recording]`
 
 ---

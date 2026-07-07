@@ -23,7 +23,7 @@ For a business fielding dozens of repeat questions a day, this deflects the bulk
 
 ## Live Demo
 
-- **Live API:** `[Railway URL — add after deploy]`
+- **Live API:** [`https://comfortable-renewal-production-3e84.up.railway.app`](https://comfortable-renewal-production-3e84.up.railway.app/health)
 - **Demo video (Loom):** `[Loom link — add after recording]`
 
 ---
