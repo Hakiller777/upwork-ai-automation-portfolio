@@ -4,32 +4,50 @@
 > Recalibraciones: Jun 15, Jun 17, Jun 24 (inicio build efectivo)
 > **✅ Actualizado 2026-07-02:** Project #3 (Document Processing) construido completo de punta a punta en esta sesión — código, tests, datos sintéticos, Docker, n8n, Railway config. Con esto, **los 3 proyectos tienen código 100% completo**. Falta solo README + deploy real + Loom (Hugo/Cowork) en los 3.
 > **✅ Re-verificado 2026-07-02 (misma tarde):** re-chequeo completo de Project #3 — 17/17 tests OK, pipeline CLI corrido en vivo sobre los 10 documentos sintéticos (8 reported, 2 needs_review, 0 failed), `docker compose config` validado sin errores en root + los 3 proyectos (puertos 8000/8001/8002 sin conflicto). Kanban (GitHub Projects #1) estaba desactualizado — las 3 tarjetas de núcleo de Project #3 seguían en Backlog pese a estar terminadas; se movieron a ✅ Hecho, y la tarjeta de cierre (README+diagrama+deploy+Loom) se movió a 🔄 En progreso, en línea con la de Project #2.
+> **✅ Día 10 (2026-07-07):** re-verificación en vivo de #2 (16/16) y #3 (17/17) con pytest real — ambos números coinciden exactos con lo documentado, sin corrección necesaria. DEPLOYMENT.md escrito para #2 y #3 (mismo patrón que #1: prerequisites, Root Directory, env vars, deploy, verify, troubleshooting). Kanban revisado: las tarjetas CIERRE de #2/#3 ya estaban correctamente en 🔄 En progreso, sin cambios necesarios. **Bloqueado:** el deploy real a Railway requiere `railway login` interactivo (OAuth en navegador) con la cuenta de Hugo — el Railway CLI se instaló (`npm i -g @railway/cli`, v5.24.0) pero no se pudo autenticar sin intervención manual. Ver "Pendiente exacto" abajo.
 
 ---
 
 ## 🚀 NEXT SESSION — START HERE
 
-**Los 3 proyectos tienen código completo. Queda solo el wrap-up manual (Hugo/Cowork), en paralelo por proyecto:**
+**Los 3 proyectos tienen código completo + README completo + DEPLOYMENT.md completo. Lo único que queda es 100% manual de Hugo: login de Railway, los 3 deploys, y los 3 Looms.**
+
+**Pendiente exacto (bloqueante, requiere a Hugo):**
+1. `railway login` en una terminal local (abre el navegador, requiere confirmar con la cuenta de Railway de Hugo — no se puede automatizar).
+2. Una vez logueado, correr por proyecto (`railway link` selecciona/crea el servicio con Root Directory = la carpeta del proyecto, `railway up` deploya):
+   ```
+   cd project-1-lead-generation && railway link && railway up
+   cd project-2-support-chatbot-rag && railway link && railway up
+   cd project-3-document-processing && railway link && railway up
+   ```
+3. Generar dominio público por servicio (dashboard → Settings → Networking → Generate Domain) y confirmar `curl <url>/health` → 200 en los 3.
+4. Pegar las 3 URLs en la sección "Live Demo" de cada README.md.
+5. Grabar los 3 Looms (exclusivamente de Hugo, no tocar).
 
 **Project #1 — wrap-up:**
-- [ ] README.md de `project-1-lead-generation/` (arquitectura + setup + uso + diagrama Mermaid) — Cowork
-- [ ] Confirmar/ejecutar deploy real en Railway (Hugo)
+- [x] README.md de `project-1-lead-generation/` — hecho (174 líneas + diagrama Mermaid)
+- [x] DEPLOYMENT.md — hecho
+- [ ] Confirmar/ejecutar deploy real en Railway (Hugo — bloqueado en `railway login`)
 - [ ] Grabar Loom del flujo end-to-end (Hugo)
 
 **Project #2 — wrap-up:**
-- [ ] README.md — Cowork
-- [ ] Deploy real en Railway (Hugo)
+- [x] README.md — hecho 2026-07-06 (Claude Code: business value + arquitectura Mermaid + tech stack + pluggable AI + setup + tests)
+- [x] DEPLOYMENT.md — hecho 2026-07-07 (Claude Code)
+- [x] Tests re-verificados en vivo 2026-07-07: 16/16 pytest
+- [ ] Deploy real en Railway (Hugo — bloqueado en `railway login`)
 - [ ] Loom del flujo end-to-end (Hugo)
 
 **Project #3 — wrap-up:**
-- [ ] README.md de `project-3-document-processing/` (arquitectura + setup + uso + diagrama Mermaid) — Cowork
-- [ ] Deploy real en Railway (Hugo)
+- [x] README.md de `project-3-document-processing/` — hecho 2026-07-06 (Claude Code)
+- [x] DEPLOYMENT.md — hecho 2026-07-07 (Claude Code)
+- [x] Tests re-verificados en vivo 2026-07-07: 17/17 pytest
+- [ ] Deploy real en Railway (Hugo — bloqueado en `railway login`)
 - [ ] Loom del flujo end-to-end (Hugo)
 - [ ] Nota para Cowork: dataset sintético quedó en 4 PDFs reales (reportlab) + 6 emails simulados (JSON) = 10 documentos totales, no 10 PDFs puros — simplificación de tiempo, documentada abajo. Ampliar a más PDFs reales es opcional, no bloqueante.
 
-**Nota:** con los 3 proyectos de código cerrado, el sprint termina Jul 4 con solo wrap-up manual (READMEs/Looms/deploys Railway) pendiente — no queda más build de Claude Code en el alcance actual.
+**Nota:** con los 3 proyectos de código + README + DEPLOYMENT.md cerrados, lo único pendiente es manual de Hugo (login Railway + 3 deploys + 3 Looms) — no queda más build de Claude Code en el alcance actual.
 
-**Sesión cerrada 2026-07-02 — próxima sesión arranca con el wrap-up manual de los 3 proyectos (Hugo/Cowork). Si aparece más trabajo de código, sería sobre #4/#5 (reservados, no tocar aún) o fixes puntuales.**
+**Sesión 2026-07-07 (Día 10) — re-verificación de tests en vivo (16/16, 17/17, sin discrepancias), DEPLOYMENT.md de #2 y #3 escritos, Railway CLI instalado. Próxima sesión: nada de código pendiente salvo que Hugo reporte algo roto en el deploy real. Si aparece más trabajo de código, sería sobre #4/#5 (reservados, no tocar aún) o fixes puntuales.**
 
 ---
 
@@ -89,19 +107,24 @@
 
 ---
 
-## Pending Items (real, 2026-07-02)
+## Pending Items (real, 2026-07-07)
 
-| # | Item                                                              | Deadline      | Status      |
-|---|--------------------------------------------------------------------|---------------|-------------|
-| 1 | Project #1 — escribir README (arquitectura + setup + uso + diagrama Mermaid) | Urgente | ⬜ Open |
-| 2 | Project #1 — grabar Loom del flujo end-to-end                     | Urgente       | ⬜ Open     |
-| 3 | Project #1 — confirmar deploy real en Railway (no verificable desde el repo) | Urgente | ⬜ Open |
-| 4 | Project #2 — escribir README (arquitectura + setup + uso + diagrama Mermaid) | Urgente | ⬜ Open |
-| 5 | Project #2 — grabar Loom del flujo end-to-end                     | Urgente       | ⬜ Open     |
-| 6 | Project #2 — confirmar deploy real en Railway (no verificable desde el repo) | Urgente | ⬜ Open |
-| 7 | Project #3 — escribir README (arquitectura + setup + uso + diagrama Mermaid) | Urgente | ⬜ Open |
-| 8 | Project #3 — grabar Loom del flujo end-to-end                     | Urgente       | ⬜ Open     |
-| 9 | Project #3 — confirmar deploy real en Railway (no verificable desde el repo) | Urgente | ⬜ Open |
+| #  | Item                                                              | Deadline      | Status      |
+|----|--------------------------------------------------------------------|---------------|-------------|
+| 1  | Project #1 — escribir README (arquitectura + setup + uso + diagrama Mermaid) | — | ✅ Done (ya estaba) |
+| 2  | Project #1 — escribir DEPLOYMENT.md                                | —             | ✅ Done (ya estaba, commit 4b4cb48) |
+| 3  | Project #1 — grabar Loom del flujo end-to-end                     | Urgente       | ⬜ Open (Hugo) |
+| 4  | Project #1 — deploy real en Railway                                | Urgente       | ⬜ Open (Hugo — bloqueado en `railway login`) |
+| 5  | Project #2 — escribir README (arquitectura + setup + uso + diagrama Mermaid) | — | ✅ Done (2026-07-06) |
+| 6  | Project #2 — escribir DEPLOYMENT.md                                | —             | ✅ Done (2026-07-07) |
+| 7  | Project #2 — re-verificar tests en vivo                            | —             | ✅ Done (2026-07-07) — 16/16 pytest |
+| 8  | Project #2 — grabar Loom del flujo end-to-end                     | Urgente       | ⬜ Open (Hugo) |
+| 9  | Project #2 — deploy real en Railway                                | Urgente       | ⬜ Open (Hugo — bloqueado en `railway login`) |
+| 10 | Project #3 — escribir README (arquitectura + setup + uso + diagrama Mermaid) | — | ✅ Done (2026-07-06) |
+| 11 | Project #3 — escribir DEPLOYMENT.md                                | —             | ✅ Done (2026-07-07) |
+| 12 | Project #3 — re-verificar tests en vivo                            | —             | ✅ Done (2026-07-07) — 17/17 pytest |
+| 13 | Project #3 — grabar Loom del flujo end-to-end                     | Urgente       | ⬜ Open (Hugo) |
+| 14 | Project #3 — deploy real en Railway                                | Urgente       | ⬜ Open (Hugo — bloqueado en `railway login`) |
 
 ---
 
